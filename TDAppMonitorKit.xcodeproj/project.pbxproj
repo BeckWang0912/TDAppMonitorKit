@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5E9A5B020787C0900E9D681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5AF20787C0900E9D681 /* AppDelegate.m */; };
+		E5E9A5B320787C0900E9D681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5B220787C0900E9D681 /* ViewController.m */; };
+		E5E9A5B620787C0900E9D681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E9A5B420787C0900E9D681 /* Main.storyboard */; };
+		E5E9A5BB20787C0900E9D681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E9A5B920787C0900E9D681 /* LaunchScreen.storyboard */; };
+		E5E9A5BE20787C0900E9D681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5BD20787C0900E9D681 /* main.m */; };
+		E5E9A5CA20787EE200E9D681 /* TDAppFluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5C920787EE200E9D681 /* TDAppFluencyMonitor.m */; };
+		E5E9A5E02078821D00E9D681 /* TDBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5D420787F9400E9D681 /* TDBacktraceLogger.m */; };
+		E5E9A5E12078822300E9D681 /* TDDispatchAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5CF20787F9400E9D681 /* TDDispatchAsync.m */; };
+		E5E9A5E22078822D00E9D681 /* TDDispatchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5D120787F9400E9D681 /* TDDispatchOperation.m */; };
+		E5E9A5E32078823700E9D681 /* TDGlobalTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5D720787F9400E9D681 /* TDGlobalTimer.m */; };
+		E5E9A5E42078823F00E9D681 /* TDAsyncLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5DA20787F9400E9D681 /* TDAsyncLabel.m */; };
+		E5E9A5E52078824400E9D681 /* TDTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5DD20787F9400E9D681 /* TDTopWindow.m */; };
+		E5E9A5FC2078830A00E9D681 /* TDFPSDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5E8207882FC00E9D681 /* TDFPSDisplayer.m */; };
+		E5E9A5FD2078830F00E9D681 /* TDFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5EA207882FC00E9D681 /* TDFPSMonitor.m */; };
+		E5E9A5FE2078831600E9D681 /* TDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5EC207882FC00E9D681 /* TDWeakProxy.m */; };
+		E5E9A5FF2078832600E9D681 /* TDApplicationCPU.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5EF207882FC00E9D681 /* TDApplicationCPU.m */; };
+		E5E9A6002078832600E9D681 /* TDApplicationMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5F1207882FC00E9D681 /* TDApplicationMemory.m */; };
+		E5E9A6012078832600E9D681 /* TDCPUDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5F3207882FC00E9D681 /* TDCPUDisplayer.m */; };
+		E5E9A6022078832600E9D681 /* TDMemoryDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5F5207882FC00E9D681 /* TDMemoryDisplayer.m */; };
+		E5E9A6032078832600E9D681 /* TDResourceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5F7207882FC00E9D681 /* TDResourceMonitor.m */; };
+		E5E9A6042078832600E9D681 /* TDSystemCPU.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5F9207882FC00E9D681 /* TDSystemCPU.m */; };
+		E5E9A6052078832600E9D681 /* TDSystemMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9A5FB207882FC00E9D681 /* TDSystemMemory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E5E9A5AB20787C0900E9D681 /* TDAppMonitorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDAppMonitorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E9A5AE20787C0900E9D681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5E9A5AF20787C0900E9D681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5E9A5B120787C0900E9D681 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5E9A5B220787C0900E9D681 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5E9A5B520787C0900E9D681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5E9A5BA20787C0900E9D681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5E9A5BC20787C0900E9D681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E9A5BD20787C0900E9D681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5E9A5C820787EE200E9D681 /* TDAppFluencyMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAppFluencyMonitor.h; sourceTree = "<group>"; };
+		E5E9A5C920787EE200E9D681 /* TDAppFluencyMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAppFluencyMonitor.m; sourceTree = "<group>"; };
+		E5E9A5CE20787F9400E9D681 /* TDDispatchAsync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDDispatchAsync.h; sourceTree = "<group>"; };
+		E5E9A5CF20787F9400E9D681 /* TDDispatchAsync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDispatchAsync.m; sourceTree = "<group>"; };
+		E5E9A5D020787F9400E9D681 /* TDDispatchOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDDispatchOperation.h; sourceTree = "<group>"; };
+		E5E9A5D120787F9400E9D681 /* TDDispatchOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDispatchOperation.m; sourceTree = "<group>"; };
+		E5E9A5D320787F9400E9D681 /* TDBacktraceLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDBacktraceLogger.h; sourceTree = "<group>"; };
+		E5E9A5D420787F9400E9D681 /* TDBacktraceLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDBacktraceLogger.m; sourceTree = "<group>"; };
+		E5E9A5D620787F9400E9D681 /* TDGlobalTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDGlobalTimer.h; sourceTree = "<group>"; };
+		E5E9A5D720787F9400E9D681 /* TDGlobalTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDGlobalTimer.m; sourceTree = "<group>"; };
+		E5E9A5D920787F9400E9D681 /* TDAsyncLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAsyncLabel.h; sourceTree = "<group>"; };
+		E5E9A5DA20787F9400E9D681 /* TDAsyncLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAsyncLabel.m; sourceTree = "<group>"; };
+		E5E9A5DB20787F9400E9D681 /* TDMonitorUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDMonitorUI.h; sourceTree = "<group>"; };
+		E5E9A5DC20787F9400E9D681 /* TDTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTopWindow.h; sourceTree = "<group>"; };
+		E5E9A5DD20787F9400E9D681 /* TDTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTopWindow.m; sourceTree = "<group>"; };
+		E5E9A5DE20787F9400E9D681 /* UIApplication+TDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TDTool.h"; sourceTree = "<group>"; };
+		E5E9A5DF20787F9400E9D681 /* UIApplication+TDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TDTool.m"; sourceTree = "<group>"; };
+		E5E9A5E7207882FC00E9D681 /* TDFPSDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDFPSDisplayer.h; sourceTree = "<group>"; };
+		E5E9A5E8207882FC00E9D681 /* TDFPSDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDFPSDisplayer.m; sourceTree = "<group>"; };
+		E5E9A5E9207882FC00E9D681 /* TDFPSMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDFPSMonitor.h; sourceTree = "<group>"; };
+		E5E9A5EA207882FC00E9D681 /* TDFPSMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDFPSMonitor.m; sourceTree = "<group>"; };
+		E5E9A5EB207882FC00E9D681 /* TDWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDWeakProxy.h; sourceTree = "<group>"; };
+		E5E9A5EC207882FC00E9D681 /* TDWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDWeakProxy.m; sourceTree = "<group>"; };
+		E5E9A5EE207882FC00E9D681 /* TDApplicationCPU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDApplicationCPU.h; sourceTree = "<group>"; };
+		E5E9A5EF207882FC00E9D681 /* TDApplicationCPU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDApplicationCPU.m; sourceTree = "<group>"; };
+		E5E9A5F0207882FC00E9D681 /* TDApplicationMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDApplicationMemory.h; sourceTree = "<group>"; };
+		E5E9A5F1207882FC00E9D681 /* TDApplicationMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDApplicationMemory.m; sourceTree = "<group>"; };
+		E5E9A5F2207882FC00E9D681 /* TDCPUDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCPUDisplayer.h; sourceTree = "<group>"; };
+		E5E9A5F3207882FC00E9D681 /* TDCPUDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCPUDisplayer.m; sourceTree = "<group>"; };
+		E5E9A5F4207882FC00E9D681 /* TDMemoryDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDMemoryDisplayer.h; sourceTree = "<group>"; };
+		E5E9A5F5207882FC00E9D681 /* TDMemoryDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDMemoryDisplayer.m; sourceTree = "<group>"; };
+		E5E9A5F6207882FC00E9D681 /* TDResourceMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDResourceMonitor.h; sourceTree = "<group>"; };
+		E5E9A5F7207882FC00E9D681 /* TDResourceMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDResourceMonitor.m; sourceTree = "<group>"; };
+		E5E9A5F8207882FC00E9D681 /* TDSystemCPU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDSystemCPU.h; sourceTree = "<group>"; };
+		E5E9A5F9207882FC00E9D681 /* TDSystemCPU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSystemCPU.m; sourceTree = "<group>"; };
+		E5E9A5FA207882FC00E9D681 /* TDSystemMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDSystemMemory.h; sourceTree = "<group>"; };
+		E5E9A5FB207882FC00E9D681 /* TDSystemMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSystemMemory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5E9A5A820787C0900E9D681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5E9A5A220787C0900E9D681 = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5AD20787C0900E9D681 /* TDAppMonitorKit */,
+				E5E9A5AC20787C0900E9D681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5E9A5AC20787C0900E9D681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5AB20787C0900E9D681 /* TDAppMonitorKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5E9A5AD20787C0900E9D681 /* TDAppMonitorKit */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5C420787C7000E9D681 /* Fluency */,
+				E5E9A5E6207882FC00E9D681 /* FPS */,
+				E5E9A5ED207882FC00E9D681 /* Resource */,
+				E5E9A5CB20787F4B00E9D681 /* Tools */,
+				E5E9A5AE20787C0900E9D681 /* AppDelegate.h */,
+				E5E9A5AF20787C0900E9D681 /* AppDelegate.m */,
+				E5E9A5B120787C0900E9D681 /* ViewController.h */,
+				E5E9A5B220787C0900E9D681 /* ViewController.m */,
+				E5E9A5B420787C0900E9D681 /* Main.storyboard */,
+				E5E9A5B920787C0900E9D681 /* LaunchScreen.storyboard */,
+				E5E9A5BC20787C0900E9D681 /* Info.plist */,
+				E5E9A5BD20787C0900E9D681 /* main.m */,
+			);
+			path = TDAppMonitorKit;
+			sourceTree = "<group>";
+		};
+		E5E9A5C420787C7000E9D681 /* Fluency */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5C820787EE200E9D681 /* TDAppFluencyMonitor.h */,
+				E5E9A5C920787EE200E9D681 /* TDAppFluencyMonitor.m */,
+			);
+			path = Fluency;
+			sourceTree = "<group>";
+		};
+		E5E9A5CB20787F4B00E9D681 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5D220787F9400E9D681 /* Backtrace */,
+				E5E9A5CD20787F9400E9D681 /* Dispatch */,
+				E5E9A5D520787F9400E9D681 /* Timer */,
+				E5E9A5D820787F9400E9D681 /* UI */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E5E9A5CD20787F9400E9D681 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5CE20787F9400E9D681 /* TDDispatchAsync.h */,
+				E5E9A5CF20787F9400E9D681 /* TDDispatchAsync.m */,
+				E5E9A5D020787F9400E9D681 /* TDDispatchOperation.h */,
+				E5E9A5D120787F9400E9D681 /* TDDispatchOperation.m */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		E5E9A5D220787F9400E9D681 /* Backtrace */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5D320787F9400E9D681 /* TDBacktraceLogger.h */,
+				E5E9A5D420787F9400E9D681 /* TDBacktraceLogger.m */,
+			);
+			path = Backtrace;
+			sourceTree = "<group>";
+		};
+		E5E9A5D520787F9400E9D681 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5D620787F9400E9D681 /* TDGlobalTimer.h */,
+				E5E9A5D720787F9400E9D681 /* TDGlobalTimer.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		E5E9A5D820787F9400E9D681 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5D920787F9400E9D681 /* TDAsyncLabel.h */,
+				E5E9A5DA20787F9400E9D681 /* TDAsyncLabel.m */,
+				E5E9A5DB20787F9400E9D681 /* TDMonitorUI.h */,
+				E5E9A5DC20787F9400E9D681 /* TDTopWindow.h */,
+				E5E9A5DD20787F9400E9D681 /* TDTopWindow.m */,
+				E5E9A5DE20787F9400E9D681 /* UIApplication+TDTool.h */,
+				E5E9A5DF20787F9400E9D681 /* UIApplication+TDTool.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E5E9A5E6207882FC00E9D681 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5E7207882FC00E9D681 /* TDFPSDisplayer.h */,
+				E5E9A5E8207882FC00E9D681 /* TDFPSDisplayer.m */,
+				E5E9A5E9207882FC00E9D681 /* TDFPSMonitor.h */,
+				E5E9A5EA207882FC00E9D681 /* TDFPSMonitor.m */,
+				E5E9A5EB207882FC00E9D681 /* TDWeakProxy.h */,
+				E5E9A5EC207882FC00E9D681 /* TDWeakProxy.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		E5E9A5ED207882FC00E9D681 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9A5EE207882FC00E9D681 /* TDApplicationCPU.h */,
+				E5E9A5EF207882FC00E9D681 /* TDApplicationCPU.m */,
+				E5E9A5F0207882FC00E9D681 /* TDApplicationMemory.h */,
+				E5E9A5F1207882FC00E9D681 /* TDApplicationMemory.m */,
+				E5E9A5F2207882FC00E9D681 /* TDCPUDisplayer.h */,
+				E5E9A5F3207882FC00E9D681 /* TDCPUDisplayer.m */,
+				E5E9A5F4207882FC00E9D681 /* TDMemoryDisplayer.h */,
+				E5E9A5F5207882FC00E9D681 /* TDMemoryDisplayer.m */,
+				E5E9A5F6207882FC00E9D681 /* TDResourceMonitor.h */,
+				E5E9A5F7207882FC00E9D681 /* TDResourceMonitor.m */,
+				E5E9A5F8207882FC00E9D681 /* TDSystemCPU.h */,
+				E5E9A5F9207882FC00E9D681 /* TDSystemCPU.m */,
+				E5E9A5FA207882FC00E9D681 /* TDSystemMemory.h */,
+				E5E9A5FB207882FC00E9D681 /* TDSystemMemory.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5E9A5AA20787C0900E9D681 /* TDAppMonitorKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E9A5C120787C0900E9D681 /* Build configuration list for PBXNativeTarget "TDAppMonitorKit" */;
+			buildPhases = (
+				E5E9A5A720787C0900E9D681 /* Sources */,
+				E5E9A5A820787C0900E9D681 /* Frameworks */,
+				E5E9A5A920787C0900E9D681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDAppMonitorKit;
+			productName = TDAppMonitorKit;
+			productReference = E5E9A5AB20787C0900E9D681 /* TDAppMonitorKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5E9A5A320787C0900E9D681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = beck.wang;
+				TargetAttributes = {
+					E5E9A5AA20787C0900E9D681 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E5E9A5A620787C0900E9D681 /* Build configuration list for PBXProject "TDAppMonitorKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5E9A5A220787C0900E9D681;
+			productRefGroup = E5E9A5AC20787C0900E9D681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5E9A5AA20787C0900E9D681 /* TDAppMonitorKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5E9A5A920787C0900E9D681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E9A5BB20787C0900E9D681 /* LaunchScreen.storyboard in Resources */,
+				E5E9A5B620787C0900E9D681 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5E9A5A720787C0900E9D681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E9A5FF2078832600E9D681 /* TDApplicationCPU.m in Sources */,
+				E5E9A6002078832600E9D681 /* TDApplicationMemory.m in Sources */,
+				E5E9A6012078832600E9D681 /* TDCPUDisplayer.m in Sources */,
+				E5E9A6022078832600E9D681 /* TDMemoryDisplayer.m in Sources */,
+				E5E9A6032078832600E9D681 /* TDResourceMonitor.m in Sources */,
+				E5E9A6042078832600E9D681 /* TDSystemCPU.m in Sources */,
+				E5E9A6052078832600E9D681 /* TDSystemMemory.m in Sources */,
+				E5E9A5FE2078831600E9D681 /* TDWeakProxy.m in Sources */,
+				E5E9A5FD2078830F00E9D681 /* TDFPSMonitor.m in Sources */,
+				E5E9A5FC2078830A00E9D681 /* TDFPSDisplayer.m in Sources */,
+				E5E9A5E52078824400E9D681 /* TDTopWindow.m in Sources */,
+				E5E9A5E42078823F00E9D681 /* TDAsyncLabel.m in Sources */,
+				E5E9A5E32078823700E9D681 /* TDGlobalTimer.m in Sources */,
+				E5E9A5E22078822D00E9D681 /* TDDispatchOperation.m in Sources */,
+				E5E9A5E12078822300E9D681 /* TDDispatchAsync.m in Sources */,
+				E5E9A5E02078821D00E9D681 /* TDBacktraceLogger.m in Sources */,
+				E5E9A5B320787C0900E9D681 /* ViewController.m in Sources */,
+				E5E9A5BE20787C0900E9D681 /* main.m in Sources */,
+				E5E9A5B020787C0900E9D681 /* AppDelegate.m in Sources */,
+				E5E9A5CA20787EE200E9D681 /* TDAppFluencyMonitor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5E9A5B420787C0900E9D681 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E9A5B520787C0900E9D681 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5E9A5B920787C0900E9D681 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E9A5BA20787C0900E9D681 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5E9A5BF20787C0900E9D681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5E9A5C020787C0900E9D681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5E9A5C220787C0900E9D681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MQ2Q6S375;
+				INFOPLIST_FILE = TDAppMonitorKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beck.wang.TDAppMonitorKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5E9A5C320787C0900E9D681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MQ2Q6S375;
+				INFOPLIST_FILE = TDAppMonitorKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beck.wang.TDAppMonitorKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5E9A5A620787C0900E9D681 /* Build configuration list for PBXProject "TDAppMonitorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E9A5BF20787C0900E9D681 /* Debug */,
+				E5E9A5C020787C0900E9D681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E9A5C120787C0900E9D681 /* Build configuration list for PBXNativeTarget "TDAppMonitorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E9A5C220787C0900E9D681 /* Debug */,
+				E5E9A5C320787C0900E9D681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5E9A5A320787C0900E9D681 /* Project object */;
+}
