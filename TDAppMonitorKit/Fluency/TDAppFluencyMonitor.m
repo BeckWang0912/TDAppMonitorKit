@@ -34,7 +34,7 @@ static inline void __td_monitor_init() {
 }
 
 #pragma mark - Public
-+ (instancetype)monitor {
++ (instancetype)sharedMonitor {
     return [TDAppFluencyMonitor new];
 }
 

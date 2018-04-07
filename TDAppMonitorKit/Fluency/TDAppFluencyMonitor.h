@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#define TD_FLUENCYMONITOR [TDAppFluencyMonitor monitor]
+#define TD_FLUENCYMONITOR [TDAppFluencyMonitor sharedMonitor]
 
 @interface TDAppFluencyMonitor : NSObject
-+ (instancetype)monitor;
+
++ (instancetype)sharedMonitor;
 - (void)startMonitoring;
 - (void)stopMonitoring;
+
 @end

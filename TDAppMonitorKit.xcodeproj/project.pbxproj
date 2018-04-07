@@ -78,6 +78,7 @@
 		E5E9A5F9207882FC00E9D681 /* TDSystemCPU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSystemCPU.m; sourceTree = "<group>"; };
 		E5E9A5FA207882FC00E9D681 /* TDSystemMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDSystemMemory.h; sourceTree = "<group>"; };
 		E5E9A5FB207882FC00E9D681 /* TDSystemMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSystemMemory.m; sourceTree = "<group>"; };
+		E5E9A6242078864700E9D681 /* TDCommonBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCommonBridging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 				E5E9A5CD20787F9400E9D681 /* Dispatch */,
 				E5E9A5D520787F9400E9D681 /* Timer */,
 				E5E9A5D820787F9400E9D681 /* UI */,
+				E5E9A6242078864700E9D681 /* TDCommonBridging.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
