@@ -2,13 +2,6 @@
 ====
 `TDAppMonitorKit`是一套轻量级的应用性能管理组件,目前集成了UI卡顿检测、CPU占用分析以及Memory占用分析。
 
-**Pod Install**
-====
-$ pod 'TDAppMonitorKit'
-
-- swift工程调用 在桥接文件中#import "TDCommonBridging.h"
-- oc 工程课直接使用
-
 **代码使用**
 ====
 `TDAppMonitorKit`监控任务实现如下：
