@@ -2,7 +2,18 @@
 ====
 `TDAppMonitorKit`是一套轻量级的应用性能管理组件,目前集成了UI卡顿检测、CPU占用分析以及Memory占用分析。
 
-**代码使用**
+
+**安装要求**
+====
+- iOS 8.0+
+- Xcode 9.0+
+
+**CocoaPod安装**
+====
+- pod "TDAppMonitorKit"
+
+
+**Objective-C项目中使用**
 ====
 `TDAppMonitorKit`监控任务实现如下：
 
@@ -17,6 +28,15 @@
 - CPU&Memory监控 `TDResourceMonitor` 
 
 		[TD_RESOURCEMONITOR startMonitoring];
+
+
+**Swift项目中使用**
+===
+  - import TDAppMonitorKit
+  
+  - TDAppFluencyMonitor.shared().startMonitoring()
+  - TDFPSMonitor.shared().startMonitoring()
+  - TDResourceMonitor().startMonitoring()
 
 **原理简析**
 ====
@@ -34,11 +54,11 @@
   
      监听`RunLoop`无疑会污染主线程。死循环在线程间通信会造成大量的不必要损耗。so，寻找更佳的检测方案变得迫不及待，我们知道从计算机的角度来说，假设屏幕在连续的屏幕刷新周期之内无法刷新屏幕内容，即是发生了卡顿。
   
-     思路是每个屏幕刷新周期派发标记位设置任务到主线程中，如果多次超出16.7ms的刷新阙值(iOS屏幕刷新周期为1/60s)，即可看作是发生了卡顿。
+     FPS方案采用`CADisplayLink`的方式来处理, 思路是每个屏幕刷新周期派发标记位设置任务到主线程中，如果多次超出16.7ms的刷新阙值(iOS屏幕刷新周期为1/60s)，即可看作是发生了卡顿。
   
 - CPU&Memory监控
     
-     检测当前利用情况
+     检测当前利用情况,这里监测的Memory占用情况与模拟器差别比较大，参考价值一般。
 
 **性能**
 ====

@@ -17,7 +17,7 @@ static TDTopWindow * td_top_window;
 #if DEBUG
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        td_top_window = [[super allocWithZone: NSDefaultMallocZone()] initWithFrame: [UIScreen mainScreen].bounds];
+        td_top_window = [[super allocWithZone: NSDefaultMallocZone()] initWithFrame: CGRectMake(60, 0, [UIScreen mainScreen].bounds.size.width - 120, 55)];
     });
 #endif
     return td_top_window;
@@ -35,9 +35,11 @@ static TDTopWindow * td_top_window;
     if (self = [super initWithFrame: frame]) {
         [super setUserInteractionEnabled: NO];
         [super setWindowLevel: CGFLOAT_MAX];
-        
+        //[super setBackgroundColor:[UIColor redColor]];
         self.rootViewController = [UIViewController new];
-        [self makeKeyAndVisible];
+        // 为了不影响keywindow上的交互，把topwindow设置为可见即可。
+        self.hidden = NO;
+        //[self makeKeyAndVisible];
     }
     return self;
 }

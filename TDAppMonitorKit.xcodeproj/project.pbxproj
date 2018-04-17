@@ -32,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F67EED220859F3D007FAF97 /* TDAppMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAppMonitor.h; sourceTree = "<group>"; };
 		E5E9A5AB20787C0900E9D681 /* TDAppMonitorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDAppMonitorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E9A5AE20787C0900E9D681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5E9A5AF20787C0900E9D681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		E5E9A5F9207882FC00E9D681 /* TDSystemCPU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSystemCPU.m; sourceTree = "<group>"; };
 		E5E9A5FA207882FC00E9D681 /* TDSystemMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDSystemMemory.h; sourceTree = "<group>"; };
 		E5E9A5FB207882FC00E9D681 /* TDSystemMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSystemMemory.m; sourceTree = "<group>"; };
-		E5E9A6242078864700E9D681 /* TDCommonBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCommonBridging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F67EED120859E31007FAF97 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3F67EED220859F3D007FAF97 /* TDAppMonitor.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		E5E9A5A220787C0900E9D681 = {
 			isa = PBXGroup;
 			children = (
@@ -139,11 +147,11 @@
 		E5E9A5CB20787F4B00E9D681 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3F67EED120859E31007FAF97 /* Common */,
 				E5E9A5D220787F9400E9D681 /* Backtrace */,
 				E5E9A5CD20787F9400E9D681 /* Dispatch */,
 				E5E9A5D520787F9400E9D681 /* Timer */,
 				E5E9A5D820787F9400E9D681 /* UI */,
-				E5E9A6242078864700E9D681 /* TDCommonBridging.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";

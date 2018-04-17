@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TDAppMonitorKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "性能监测"
   s.homepage     = "https://github.com/BeckWang0912/TDAppMonitorKit"
   s.license      = { :type => "MIT", :file => "LICENSE" } 

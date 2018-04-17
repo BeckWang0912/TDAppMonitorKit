@@ -20,11 +20,13 @@
 
 - (instancetype)init {
     if (self = [super initWithFrame: CGRectMake((CGRectGetWidth([UIScreen mainScreen].bounds) - TD_FPS_DISPLAYER_SIZE.width) / 2, 30, TD_FPS_DISPLAYER_SIZE.width, TD_FPS_DISPLAYER_SIZE.height)]) {
+        CGFloat centerX = round((CGRectGetWidth([UIScreen mainScreen].bounds) - 120)/2);
+        self.center = CGPointMake(centerX, self.center.y);
         CAShapeLayer * bgLayer = [CAShapeLayer layer];
         bgLayer.fillColor = [UIColor colorWithWhite: 0 alpha: 0.7].CGColor;
         bgLayer.path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(0, 0, TD_FPS_DISPLAYER_SIZE.width, TD_FPS_DISPLAYER_SIZE.height) cornerRadius: 5].CGPath;
         [self.layer addSublayer: bgLayer];
-        
+
         self.fpsDisplayer = [[TDAsyncLabel alloc] initWithFrame: self.bounds];
         self.fpsDisplayer.textColor = [UIColor whiteColor];
         self.fpsDisplayer.textAlignment = NSTextAlignmentCenter;
@@ -33,6 +35,7 @@
         [self addSubview: self.fpsDisplayer];
     }
     return self;
+
 }
 
 - (void)updateFPS: (int)fps {
