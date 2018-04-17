@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC 
                         TDAppMonitorKit 是一个性能监测工具，集成了UI、CPU、Memory检测分析
                    DESC
-  s.author       = { "wangzhitao" => "2067431781@qq.com" }
+  s.author       = { "IMAC-AF9B8D" => "2067431781@qq.com" }
   s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => "git@github.com:BeckWang0912/TDAppMonitorKit.git", :tag => 'v'+s.version.to_s}
+  s.source       = { :git => "https://github.com/BeckWang0912/TDAppMonitorKit.git", :tag => 'v'+s.version.to_s}
   s.source_files = ['TDAppMonitorKit/Fluency/', 'TDAppMonitorKit/FPS/', 'TDAppMonitorKit/Resource/','TDAppMonitorKit/Tools/**/*.{h,m}']
   s.requires_arc = true
 
