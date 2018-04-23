@@ -3,14 +3,15 @@
 `TDAppMonitorKit`是一套轻量级的应用性能管理组件,目前集成了UI卡顿检测、CPU占用分析以及Memory占用分析。
 
 
-**安装要求**
+**Install Required**
 ====
 - iOS 8.0+
 - Xcode 9.0+
+- Swift 4.0
 
-**CocoaPod安装**
+**Install**
 ====
-- pod "TDAppMonitorKit"
+- `pod "TDAppMonitorKit"`
 
 
 **Objective-C项目中使用**
@@ -32,11 +33,11 @@
 
 **Swift项目中使用**
 ===
-  - import TDAppMonitorKit
+  - `import TDAppMonitorKit`
   
-  - TDAppFluencyMonitor.shared().startMonitoring()
-  - TDFPSMonitor.shared().startMonitoring()
-  - TDResourceMonitor().startMonitoring()
+  - `TDAppFluencyMonitor.shared().startMonitoring()`
+  - `TDFPSMonitor.shared().startMonitoring()`
+  - `TDResourceMonitor().startMonitoring()`
 
 **原理简析**
 ====
