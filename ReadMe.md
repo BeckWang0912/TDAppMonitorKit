@@ -11,6 +11,7 @@
 
 **Install**
 ====
+You can use CocoaPods to install `TDAppMonitorKit` by adding it to your `Podfile`:
 - `pod "TDAppMonitorKit"`
 
 
